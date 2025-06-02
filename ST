@@ -1,0 +1,17 @@
+#!/system/bin/sh
+chmod 777 ST1
+chmod 777 jb.bms
+chmod 777 quickbms
+chmod 777 打包.bms
+chmod 777 dj
+mkdir -p "/storage/emulated/0/全自动美化/pak"
+mkdir -p "/storage/emulated/0/全自动美化/解包dat"
+mkdir -p "/storage/emulated/0/全自动美化/打包dat"
+if [ -d "/storage/emulated/0/全自动美化/pak" ] && \
+   [ -d "/storage/emulated/0/全自动美化/解包dat" ] && \
+   [ -d "/storage/emulated/0/全自动美化/打包dat" ]; then
+    echo "目录创建成功"
+else
+    echo "目录创建失败，请检查存储权限"
+fi
+python ST4
