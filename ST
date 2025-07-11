@@ -4,6 +4,13 @@ chmod 777 jb.bms
 chmod 777 quickbms
 chmod 777 打包.bms
 chmod 777 dj
+chmod 777 ST4
+chmod 777 urpack
+chmod 777 fz
+chmod 777 自动地铁原皮.sh
+chmod 777 ST2
+chmod 777 ST3
+chmod 777 进入工具
 mkdir -p "/storage/emulated/0/全自动美化/pak"
 mkdir -p "/storage/emulated/0/全自动美化/解包dat"
 mkdir -p "/storage/emulated/0/全自动美化/打包dat"
@@ -14,4 +21,4 @@ if [ -d "/storage/emulated/0/全自动美化/pak" ] && \
 else
     echo "目录创建失败，请检查存储权限"
 fi
-python ST4
+./进入工具
